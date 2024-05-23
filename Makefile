@@ -13,7 +13,7 @@
 ## Distributed files
 #
 
-FONTBASE = ubuntu
+FONTBASE = poppins
 RES = resources
 TFM := $(shell ls $(RES)/$(FONTBASE)*.tfm)
 AFM  = $(TFM:%.tfm=%.afm)
