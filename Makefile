@@ -1,6 +1,6 @@
 ###################
 ##
-## Makefile for ubuntu-latex-fonts
+## Makefile for poppins-latex-fonts
 ##
 ## THIS PROJECT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 ## EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
@@ -38,7 +38,7 @@ MAPDIR = fonts/map
 STYDIR = tex/latex/$(FONTBASE)
 FDDIR  = tex/latex/$(FONTBASE)
 
-# These are the directories only owned by the ubuntu fonts,
+# These are the directories only owned by the poppins fonts,
 # we'll have to create them
 TARGETDIRS = $(TFMDIR) $(AFMDIR) $(PFBDIR) $(STYDIR) $(FDDIR)
 
@@ -92,8 +92,8 @@ cleanmap: disablemap
 uninstall: delfiles reindex
 
 help:
-	@echo "Make file for ubuntu-latex-fonts"
-	@echo "For installation of the Ubuntu Font Family type:\n"
+	@echo "Make file for poppins-latex-fonts"
+	@echo "For installation of the Poppins Font Family type:\n"
 	@echo "\tsudo make install"
 #@echo "\tmake updatemap"
 	@echo

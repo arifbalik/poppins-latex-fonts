@@ -1,8 +1,6 @@
-This project enables you to use the original [Ubuntu Font Familiy](http://font.ubuntu.com) with LaTeX2e.
+This project enables you to use the original [Poppins Font Familiy](https://fonts.google.com/specimen/Poppins) with LaTeX2e.
 
-Available fonts are Ubuntu Regular, Light, Medium, Condensed and Monospace (as of version 0.80). They can be modified using the common `\textit`, `\textbf` and `\texttt` commands. Please mind, that Light and Medium don't come with an own bold shape. Medium and Ubuntu Bold are used as fallbacks. There is no such thing for Ubuntu Condensed, it will always come by its default shape.
-
-[![Flattr this](http://api.flattr.com/button/flattr-badge-large.png")](http://flattr.com/thing/275508/Ubuntu-LaTeX-Fonts)
+Available fonts are Poppins Regular, Light, Medium, Condensed and Monospace (as of version 0.80). They can be modified using the common `\textit`, `\textbf` and `\texttt` commands. Please mind, that Light and Medium don't come with an own bold shape. Medium and Poppins Bold are used as fallbacks. There is no such thing for Poppins Condensed, it will always come by its default shape.
 
 ##How to install##
 
@@ -25,33 +23,33 @@ $ make PREFIX=~/texmf install
 In case you'd liked to have you entire document be set using this font family add this to your preamble:
 
 ```latex
-\usepackage{ubuntu}
+\usepackage{poppins}
 ```
 
-Available package options are: `regular`, `light`, `medium`, `condensed`, standing for the different Ubuntu Fonts, respectively `none` for later activation.
+Available package options are: `regular`, `light`, `medium`, `condensed`, standing for the different Poppins Fonts, respectively `none` for later activation.
 
-For all fonts Ubuntu Monospace gets loaded as typewriter default, unless you specify `none`.
+For all fonts Poppins Monospace gets loaded as typewriter default, unless you specify `none`.
 
 If you want to change your font set mid-in your document just write:
 
 ```latex
 % Put this into your preamble
-\usepackage[none]{ubuntu}
+\usepackage[none]{poppins}
 
 \begin{document}
 
 % ...
 
-{\fontUbuntu This is Ubuntu Regular}
+{\fontPoppins This is Poppins Regular}
 
 Here, the \LaTeX standard is used again.
 ```
 
-Alternatively `\fontUbuntuLight`, `\fontUbuntuMedium` or `\fontUbuntuCondensed` are provided.
+Alternatively `\fontPoppinsLight`, `\fontPoppinsMedium` or `\fontPoppinsCondensed` are provided.
 
 ##What is missing##
 
-Changing the font in the middle of a file does not affect all writings, as section captions or other external defined texts. If this matters to you, consider setting your whole document in Ubuntu font and trigger for example `\usefont{cmbx12}{m}{n}` where needed.
+Changing the font in the middle of a file does not affect all writings, as section captions or other external defined texts. If this matters to you, consider setting your whole document in Poppins font and trigger for example `\usefont{cmbx12}{m}{n}` where needed.
 
 Currently the use of `pdflatex` is enforced, old-school dvi stuff will not work.
 
